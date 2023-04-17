@@ -1,18 +1,15 @@
 
-import "./App.css";
+
+import './App.css';
+import Home from './Pages/Home'
 import Classes from "./Pages/Classes";
+import { AboutUs } from "./Pages/AboutUs";
 
 function App() {
   return (
     <div className="App">
+      <Home/>
       <Classes />
-    </div>
-  );
-
-import { AboutUs } from "./Pages/AboutUs";
-import "./App.css";
-function App() {
-  return <div className="App"></div>;
 
 }
 
