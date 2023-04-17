@@ -1,3 +1,4 @@
+
 import "./App.css";
 import Classes from "./Pages/Classes";
 
@@ -7,6 +8,12 @@ function App() {
       <Classes />
     </div>
   );
+
+import { AboutUs } from "./Pages/AboutUs";
+import "./App.css";
+function App() {
+  return <div className="App"></div>;
+
 }
 
 export default App;
