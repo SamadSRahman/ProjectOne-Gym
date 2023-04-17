@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+
+
 import './App.css';
 import Home from './Pages/Home'
+import Classes from "./Pages/Classes";
+import { AboutUs } from "./Pages/AboutUs";
+
 function App() {
   return (
     <div className="App">
       <Home/>
-    </div>
-  );
+      <Classes />
+
 }
 
 export default App;
