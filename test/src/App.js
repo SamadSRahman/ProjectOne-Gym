@@ -11,14 +11,14 @@ function App() {
   return (
 
     <div className="App">
-      {/* <Navbar /> */}
-      <Registration/>
+      <Navbar />
+      {/* <Registration/> */}
       <Routes>
-        {/* <Route path='/' element={<Home />}/> */}
+        <Route path='/' element={<Home />}/>
         <Route path='/blog' element={<Blog />}/>
         <Route path='/classes' element={<Classes />}/>
         <Route path='/aboutus' element={<AboutUs />}/>
-        
+        <Route path='/register' element={<Registration/>}/>
     </Routes>
     </div>
   )
