@@ -1,28 +1,29 @@
 
-body{
-    /* position:fixed; */
-    width:100vw;
-    height: 90vh;
+/* body {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+} */
 
-}
 .Navbar {
-  /* border: 1px solid; */
-  /* margin-top: 30px; */
-  display: flex;
-  gap: 250px;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
-  height: 60px;
-  position: sticky;
-  top: 0px;
-  background-image: url("https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+    /* border: 1px solid; */
+    /* margin-top: 30px; */
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    height: 60px;
+
+    position: sticky;
+
+    top: 0px;
+    background-image: url("https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg")
 }
+
 .Navbar .logo {
-  /* border: 1px solid; */
-  margin-left: 10%;
+    /* border: 1px solid; */
+    margin-left: 200px;
+
 }
 
 .logo img {
