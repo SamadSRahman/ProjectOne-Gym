@@ -7,12 +7,13 @@ import "./Navbar.css"
 
 export function Navbar() {
 
+  const value="https://www.shutterstock.com/image-vector/fitness-gym-logo-design-template-260nw-1662632119.jpg"
   return (
     <div className="Navbar">
       <div className="logo">
         <Link to="/">
           <img 
-          src="https://www.shutterstock.com/image-vector/fitness-gym-logo-design-template-260nw-1662632119.jpg"
+          src={value}
           alt="logo"
           />
          </Link>
@@ -25,6 +26,10 @@ export function Navbar() {
             <Link to="/blog"><a>Blog</a></Link>
           </nav>
     
+        </div>
+
+        <div>
+        <Link to='/register'><a className="button">Join us</a></Link>
         </div>
     </div>
   );

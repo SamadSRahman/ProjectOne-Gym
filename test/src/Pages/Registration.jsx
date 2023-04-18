@@ -62,8 +62,8 @@ export function Registration() {
               <h1 className={styles.heading}>Login</h1>
               <InputField type={type[0]} label={propsData[0]} />
               <InputField type={type[3]} label={propsData[3]} />
-                          <InputField type="submit" class="submitBtn" />
-                          <span>Don't have an account? </span>
+              <InputField type="submit" class="submitBtn" />
+              <span>Don't have an account? </span>
             <span
               className={styles.linkSpan}
               onClick={() => setIsLogin(!isLogin)}
