@@ -1,0 +1,69 @@
+.Navbar{
+    /* border: 1px solid; */
+    margin-top: 30px;
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    height: 60px;
+
+    background-image: "https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg";
+}
+
+.logo{
+    /* border: 1px solid; */
+    margin-left: 200px;
+}
+.logo img{
+    width: 80px;
+    height: 60px;
+    border-radius: 50px
+}
+
+.logo span{
+    color: red;
+    font-weight: bolder;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.navi> nav {
+    display: flex;
+    gap: 80px;
+}
+
+.navi span{
+    color: red;
+    font-variant: small-caps;
+    
+
+    background-color: rgb(250, 251, 252);
+    border-color: rgb(223, 225, 230);
+    color: rgb(9, 30, 66);
+    cursor: text;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+    line-height: 1.42857; 
+    padding: 8px 6px;
+    height: 36px;
+
+}
+
+span:focus{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(76, 154, 255);
+}
+
+span:hover{
+    background-color: rgb(235, 236, 240);
+}
+
+
+*{
+    
+}
