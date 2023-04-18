@@ -19,10 +19,10 @@ export function Navbar() {
       </div>
         <div className="navi">
           <nav>
-            <Link to="/"><span>Home</span></Link>
-            <Link to="/aboutus"><span>About Us</span></Link>
-            <Link to="/classes"><span>Classes</span></Link>
-            <Link to="/blog"><span>Blog</span></Link>
+            <Link to="/"><a>Home</a></Link>
+            <Link to="/aboutus"><a>About Us</a></Link>
+            <Link to="/classes"><a>Classes</a></Link>
+            <Link to="/blog"><a>Blog</a></Link>
           </nav>
     
         </div>
