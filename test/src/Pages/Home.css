@@ -10,7 +10,7 @@
 
 .main {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -47,13 +47,13 @@ img {
 
 .button-container {
   position: absolute;
-  bottom: 70px;
+  bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
 
-.button {
+.button{
   display: inline-block;
   padding: 12px 24px;
   font-size: 16px;
@@ -63,7 +63,9 @@ img {
   color: #fff;
   background-color: #790606;
   border-radius: 4px;
+  margin-bottom: 20px;
   transition: all 0.3s ease;
+  border-radius:.9rem;
 }
 
 .button:hover {
