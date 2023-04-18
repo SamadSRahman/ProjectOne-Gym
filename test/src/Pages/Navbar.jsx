@@ -28,7 +28,7 @@ export function Navbar() {
     
         </div>
 
-        <div>
+        <div className="btnWrapper">
         <Link to='/register'><a className="button">Join us</a></Link>
         </div>
     </div>
