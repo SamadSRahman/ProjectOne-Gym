@@ -52,7 +52,7 @@
 }
 
 .Classes-SecondText > span{
-    margin-left: 780px;
+    /* margin-left: 780px; */
     font-size: xx-large;
     font-weight: bolder;
     color: red;
@@ -60,12 +60,12 @@
 
 .Classes-SecondText > h1{
     font-family: FitnessFirst-Medium;
-    margin-left: 600px;
+    /* margin-left: 600px; */
     font-size: 40px;
 }
 
 .Classes-SecondText > p{
-    margin-left: 600px;
+    /* margin-left: 600px; */
 }
 
 .Classes-Scroller{
@@ -90,7 +90,7 @@
 }
 
 .Classes-ThirdText > span{
-    margin-left: 780px;
+    /* margin-left: 780px; */
     font-size: xx-large;
     font-weight: bolder;
     color: red;
@@ -98,10 +98,10 @@
 
 .Classes-ThirdText > h1{
     font-family: FitnessFirst-Medium;
-    margin-left: 600px;
+    /* margin-left: 600px; */
     font-size: 40px;
 }
 
 .Classes-ThirdText > p{
-    margin-left: 600px;
+    /* margin-left: 600px; */
 }
