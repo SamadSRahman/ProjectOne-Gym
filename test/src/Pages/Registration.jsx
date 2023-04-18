@@ -100,6 +100,7 @@ export function Registration() {
           <div className={styles.loginWrapper}>
             <form onSubmit={(e)=>handleLogin(e)} className={styles.loginForm}>
               <h1 className={styles.heading}>Login</h1>
+
               <InputField func={(e)=>setEmail(e.target.value)} type={type[0]} label={propsData[0]} />
               <InputField func={(e)=>setPassword(e.target.value)}type={type[3]} label={propsData[3]} />
                           <InputField type="submit" class="submitBtn" />
