@@ -44,6 +44,7 @@ span{
     cursor: pointer;
     font-weight: bold;
     font-size: large;
+    color: darkgray;
 }
 .linkSpan:hover{
     color:cadetblue;
@@ -65,7 +66,7 @@ span{
     border: 1px solid;
     min-width: 10%;
     width: 30%;
-    height: 28rem;
+    height: 31rem;
     
     position: relative;
     left: 32%;
