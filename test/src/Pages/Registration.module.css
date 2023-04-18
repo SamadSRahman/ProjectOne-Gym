@@ -61,3 +61,16 @@ span{
     color: black;
     border-radius: 10px;
 }
+.regForm{
+    border: 1px solid;
+    min-width: 10%;
+    width: 30%;
+    height: 28rem;
+    
+    position: relative;
+    left: 32%;
+    top: 10%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}

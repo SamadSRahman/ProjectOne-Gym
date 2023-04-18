@@ -12,7 +12,11 @@ function App() {
 
     <div className="App">
       <Navbar />
+
+      
+
       {/* <Registration/> */}
+
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/blog' element={<Blog />}/>
