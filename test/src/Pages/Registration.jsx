@@ -75,7 +75,7 @@ export function Registration() {
           </div>
         ) : (
           <div className={styles.registerWrapper}>
-            <form onSubmit={handleSubmit} action="">
+            <form className={styles.regForm} onSubmit={handleSubmit} action="">
               <h1 className={styles.heading}>Registration</h1>
               <InputField
                 func={handleEmailChange}
