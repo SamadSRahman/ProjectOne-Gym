@@ -1,8 +1,9 @@
-body{
-    position:fixed;
-    width:100vw;
-    height: 90vh;
-}
+/* body {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+} */
+
 .Navbar {
     /* border: 1px solid; */
     /* margin-top: 30px; */
@@ -16,16 +17,12 @@ body{
 
     top: 0px;
     background-image: url("https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg")
-
-
-
 }
-.Navbar
 
-.logo {
+.Navbar .logo {
     /* border: 1px solid; */
     margin-left: 200px;
-  
+
 }
 
 .logo img {
