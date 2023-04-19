@@ -7,13 +7,14 @@ import { AboutUs } from "./Pages/AboutUs/AboutUs";
 import { Navbar } from "./Pages/Navbar";
 import { Registration } from "./Pages/Registration";
 import Footer from "./Pages/Footer";
+import Reviews from './Pages/review'
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/reviews" element={<Reviews />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/register" element={<Registration />} />

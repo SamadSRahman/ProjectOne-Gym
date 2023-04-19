@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import styles from "./Reviews.module.css";
+import styles from "./reviews.module.css";
 import { blogData, blogBgImg } from "../data/blogData";
 import Footer from "./Footer";
 import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
@@ -10,15 +10,15 @@ import { useState } from "react";
 
 function handleRightClick() {
   document.getElementById("container").scrollLeft += 500;
-  console.log("working");
+ 
 }
 function handleLeftClick() {
   document.getElementById("container").scrollLeft -= 500;
-  console.log("working");
+  
 }
 
 
-const Blog = () => {
+const Reviews = () => {
   const [count, setCount] = useState(0)
   useEffect(() => {
    
@@ -71,4 +71,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Reviews;
