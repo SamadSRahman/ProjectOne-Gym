@@ -9,8 +9,8 @@ import { Registration } from "./Pages/Registration";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <Registration />
+      <Navbar />
+      {/* <Registration /> */}
       <Routes>
         {/* <Route path='/' element={<Home />}/> */}
         <Route path="/blog" element={<Blog />} />
