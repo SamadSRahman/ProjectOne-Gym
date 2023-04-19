@@ -1,9 +1,5 @@
 
-/* body {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-} */
+
 
 .Navbar {
     /* border: 1px solid; */
@@ -15,9 +11,9 @@
     height: 60px;
     z-index: 20;
     position: sticky;
-
+    background-color: black;
     top: 0px;
-    background-image: url("https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg")
+    /* background-image: url("https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg") */
 }
 
 .Navbar .logo {
@@ -27,9 +23,9 @@
 }
 
 .logo img {
-  width: 80px;
-  height: 60px;
-  border-radius: 50px;
+  width: 40px;
+  height: 45px;
+  border-radius: 5%;
 }
 
 .logo span {
@@ -58,14 +54,14 @@
 }
 
 a:focus {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   border-color: rgb(76, 154, 255);
 }
 
-a:hover {
+/* a:hover {
   background-color: rgb(235, 236, 240);
   cursor: pointer;
-}
+} */
 
 a {
     text-decoration: none;
@@ -73,7 +69,7 @@ a {
 
 
 .button a{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     
     display: inline-block;
     outline: 0;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+
 function Home() {
 
   return (
@@ -47,7 +47,7 @@ function Home() {
 
             <li>24 hour Access</li>
           </ul>
-          <button>Get started</button>
+          <Link to="/register"><button>Get started</button></Link>
         </div>
         <div className="div2">
           <span>Month to Month</span>
@@ -62,7 +62,7 @@ function Home() {
             <li>1 Group class Included</li>
             <li>24 hour Access</li>
           </ul>
-          <button>Get started</button>
+          <Link to="/register"><button>Get started</button></Link>
         </div>
         <div className="div3">
           <span className="member">Membership</span>
@@ -76,10 +76,7 @@ function Home() {
           </main>
         </div>
       </div>
-      <Footer />
     </div>
-    
-
   )
 
 }

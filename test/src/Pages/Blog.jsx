@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './blog.module.css'
 import { blogBgImg , blogData} from '../data/blogData'
-import Footer from './Footer'
+
 
 const Blog = () => {
   return (
@@ -22,7 +22,6 @@ const Blog = () => {
       ))}
         </div>
 
-        <Footer />
     </div>
   )
 }

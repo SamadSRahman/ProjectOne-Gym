@@ -1,6 +1,7 @@
 import React from "react";
 import Style from "./AboutUs.module.css";
 
+
 export function AboutUs() {
   return (
     <>
@@ -110,6 +111,8 @@ export function AboutUs() {
         </div>
       </div>
       <div className={Style.background2}></div>
+
+
     </>
   );
 }
