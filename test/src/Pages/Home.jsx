@@ -68,14 +68,15 @@ function Home() {
           <span className="member">Membership</span>
           <main className='para'>
             <span>from punch pass to monthly or Annual</span>
-            At Gym Base,we offer a wide range of Membership with option to suit
-            every budget everything from one day pass.punch pass to monthly 
-          annual prepared Membership whats more we wont lie you to long
-              term contract giving you greater flexibility.
-          
-          </main>
+           
+             At Gym Base,we offer a wide range of Membership with option to     
+            suit every budget everything from one day pass.punch pass to monthly 
+            annual prepared Membership whats more we wont lie you to long
+            term contract giving you greater flexibility.
+      </main>
         </div>
       </div>
+
     </div>
   )
 
