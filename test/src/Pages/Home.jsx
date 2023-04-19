@@ -67,39 +67,36 @@ function Home() {
           <span className="member">Membership</span>
           <main className='para'>
             <span>from punch pass to monthly or Annual</span>
-            At Gym Base,we offer a wide range of Membership with option to suit
-            every budget everything from one day pass.punch pass to monthly 
-          annual prepared Membership whats more we wont lie you to long
-              term contract giving you greater flexibility.
-          
-          </main>
+           
+             At Gym Base,we offer a wide range of Membership with option to     
+            suit every budget everything from one day pass.punch pass to monthly 
+            annual prepared Membership whats more we wont lie you to long
+            term contract giving you greater flexibility.
+      </main>
         </div>
       </div>
       <div className='footer'>
         <div className="about">
           <h1>GYM</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <i class="fa fa-facebook" style={{fontSize:"46px",color:'red'}} ></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
+        <p>Don't be afraid of failure</p>
         </div>
         <div className="">
-         <span>Healithy Living</span>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
+         <span>Healthy Living</span>
+         <p>Exercise Regularly</p>
+         <p>Healthy Body Weight</p>
+         <p>Avoid Sugar</p>
         </div>
         <div className="service">
          <span>Services</span>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
+         <p>Zumba Classes</p>
+         <p>Yoga Classes</p>
+         <p>Personal Training</p>
         </div>
         <div className="program">
          <span>Programms</span>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
+         <p>Group fitness classes</p>
+         <p>Cardiovascular training</p>
+         <p>Strength training</p>
         </div>
         <hr/>
      </div>
