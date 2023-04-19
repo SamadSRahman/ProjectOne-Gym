@@ -23,7 +23,7 @@ export function Navbar() {
             <Link to="/"><>Home</></Link>
             <Link to="/aboutus"><a>About Us</a></Link>
             <Link to="/classes"><a>Classes</a></Link>
-            <Link to="/blog"><a>Blog</a></Link>
+            <Link to="/reviews"><a>Reviews</a></Link>
           </nav>
     
         </div>

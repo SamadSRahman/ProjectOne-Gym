@@ -1,0 +1,16 @@
+.scrollBtn{
+    background-color: transparent;
+    position: sticky;
+  
+  border: none;
+  cursor: pointer;
+}
+.scrollBtn:hover{
+    border: 1px solid white;
+}
+@media screen and (max-width:600px) {
+    .scrollBtn{
+        display: none;
+    }
+    
+}
