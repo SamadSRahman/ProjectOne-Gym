@@ -1,13 +1,13 @@
 import React from "react";
 import Style from "./AboutUs.module.css";
-
+import YouTube from "react-youtube";
 
 export function AboutUs() {
   return (
     <>
       <div className={Style.background}>
         <div className={Style.heading}>
-          ABOUT <strong>GOLD'S GYM</strong>
+          ABOUT <strong>FITNESS POWER GYM</strong>
         </div>
         <div className={Style.sectionFlex}>
           <div className={Style.section1}>
@@ -112,7 +112,9 @@ export function AboutUs() {
       </div>
       <div className={Style.background2}></div>
 
-
+      <div>
+        <YouTube videoId="https://www.youtube.com/results?search_query=gym+traning+video" />
+      </div>
     </>
   );
 }
