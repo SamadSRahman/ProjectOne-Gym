@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Classes.css"
 import Card from '../Components/Card';
+import Footer from './Footer';
 
 const Classes = () => {
 
@@ -60,6 +61,8 @@ const Classes = () => {
         <span>__</span>
         <p>Whatever type of of workout you're looking for, you'll find it here. </p>
       </div>
+
+      <Footer />
 
     </div>
   )
