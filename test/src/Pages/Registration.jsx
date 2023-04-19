@@ -22,7 +22,6 @@ export function Registration() {
     event.preventDefault();
     if (!data.email || !data.firstName || !data.lastName || !data.password) {
       alert("Please fill out all the details")
-      return;
     }
     else if (data.password.length <= 7){
       alert("Password should contain atleat 8 characters")
@@ -147,7 +146,7 @@ export function Registration() {
               <span>Already have an Account? </span>
               <span
                 className={styles.linkSpan}
-                onClick={() => setIsLogin(!isLogin)}
+                onClick={()=>setIsLogin(!isLogin)}
               >
                 Login
               </span>
