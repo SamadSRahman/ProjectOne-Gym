@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+
 function Home() {
 
   return (
@@ -47,7 +47,7 @@ function Home() {
 
             <li>24 hour Access</li>
           </ul>
-          <button>Get started</button>
+          <Link to="/register"><button>Get started</button></Link>
         </div>
         <div className="div2">
           <span>Month to Month</span>
@@ -62,7 +62,7 @@ function Home() {
             <li>1 Group class Included</li>
             <li>24 hour Access</li>
           </ul>
-          <button>Get started</button>
+          <Link to="/register"><button>Get started</button></Link>
         </div>
         <div className="div3">
           <span className="member">Membership</span>
@@ -77,39 +77,7 @@ function Home() {
         </div>
       </div>
 
-      <div className='footer'>
-        <div className="about">
-          <h1>GYM</h1>
-        <p>Don't be afraid of failure</p>
-        </div>
-        <div className="">
-         <span>Healthy Living</span>
-         <p>Exercise Regularly</p>
-         <p>Healthy Body Weight</p>
-         <p>Avoid Sugar</p>
-        </div>
-        <div className="service">
-         <span>Services</span>
-         <p>Zumba Classes</p>
-         <p>Yoga Classes</p>
-         <p>Personal Training</p>
-        </div>
-        <div className="program">
-         <span>Programms</span>
-         <p>Group fitness classes</p>
-         <p>Cardiovascular training</p>
-         <p>Strength training</p>
-        </div>
-        <hr/>
-     </div>
-      
-      <div className="par">
-        <p>@2023 all rights reserved</p>
-        </div>
-
     </div>
-    
-
   )
 
 }

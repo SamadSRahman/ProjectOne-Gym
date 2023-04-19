@@ -24,9 +24,9 @@
     position: absolute;
     text-align: center;
     color: white ;
-    top: 150px;
+    top: 9.375rem;
     z-index: 1;
-    margin-left: 33%;
+    margin-left: 24%;
 }
 
 .Classes-FirstText> h1{
@@ -34,20 +34,22 @@
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
-    font-size: 80px;
+    font-size: 5 rem;
 }
 
 .Classes-FirstText> span{
     color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: xx-large;
 }
 
 .Classes-SecondText{
     position: relative;
-    top: 400px;
+    top: 25rem;
     z-index: 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.313rem;
     /* border: 2px solid blue; */
 }
 
@@ -61,23 +63,43 @@
 .Classes-SecondText > h1{
     font-family: FitnessFirst-Medium;
     /* margin-left: 600px; */
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .Classes-SecondText > p{
     /* margin-left: 600px; */
+    /* border: 1px solid; */
 }
 
 .Classes-Scroller{
     /* border: 2px solid gray; */
     /* position: relative; */
-    margin-top: 400px;
+    margin-top: 25rem;
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 10px;
+    /* right: 30px; */
+    top: 0.625rem;
+    width: 100%;
     overflow-y: hidden;
     overflow: scroll;
+    overflow-x: hidden;
+    background-color:#30363d;
+}
+
+.Classes-Scroller > .leftslide{
+    position: sticky;
+    left: 0;
+    z-index: 20;
+    font-size: xx-large;
+}
+
+.Classes-Scroller > .rightslide{
+    position: sticky;
+    right: 0;
+    font-size: xx-large;
+    z-index: 20;
+    text-align: center;
 }
 
 .Classes-ThirdText{
@@ -86,7 +108,7 @@
     z-index: 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.313rem;
 }
 
 .Classes-ThirdText > span{
@@ -99,7 +121,7 @@
 .Classes-ThirdText > h1{
     font-family: FitnessFirst-Medium;
     /* margin-left: 600px; */
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .Classes-ThirdText > p{
