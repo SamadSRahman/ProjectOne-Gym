@@ -18,7 +18,7 @@
 .registerWrapper{
     border: 1px solid;
     width: 89%;
-    height:85vh;
+    height:89%;
     background-color: black;
     color: white;
     font-family: barbra;
@@ -67,7 +67,7 @@ span{
     min-width: 10%;
     width: 30%;
     height: 31rem;
-    
+    /* overflow: scroll; */
     position: relative;
     left: 32%;
     top: 10%;

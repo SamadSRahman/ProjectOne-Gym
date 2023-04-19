@@ -6,6 +6,7 @@ import Classes from "./Pages/Classes";
 import { AboutUs } from "./Pages/AboutUs/AboutUs";
 import { Navbar } from "./Pages/Navbar";
 import { Registration } from "./Pages/Registration";
+import Footer from "./Pages/Footer";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,8 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/register" element={<Registration />} />
       </Routes>
+
+      <Footer/>
     </div>
   );
 }

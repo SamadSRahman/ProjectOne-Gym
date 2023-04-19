@@ -41,6 +41,6 @@
     background-image: url("https://images.pexels.com/photos/13106621/pexels-photo-13106621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 
     background-position: center;
-    height: 95vh;
+    /* height: 95vh;+ */
     padding-top: 3%;
 }

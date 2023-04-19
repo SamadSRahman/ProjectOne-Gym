@@ -7,7 +7,7 @@ import "./Navbar.css"
 
 export function Navbar() {
 
-  const value="https://www.shutterstock.com/image-vector/fitness-gym-logo-design-template-260nw-1662632119.jpg"
+  const value="https://image.similarpng.com/very-thumbnail/2021/07/Fitness-Gym-logo-design-template-on-transparent-background-PNG.png"
   return (
     <div className="Navbar">
       <div className="logo">
@@ -20,7 +20,7 @@ export function Navbar() {
       </div>
         <div className="navi">
           <nav>
-            <Link to="/"><a>Home</a></Link>
+            <Link to="/"><>Home</></Link>
             <Link to="/aboutus"><a>About Us</a></Link>
             <Link to="/classes"><a>Classes</a></Link>
             <Link to="/blog"><a>Blog</a></Link>

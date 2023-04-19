@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './blog.module.css'
 import { blogBgImg , blogData} from '../data/blogData'
 
+
 const Blog = () => {
   return (
     <div className={styles.background}>
@@ -20,6 +21,7 @@ const Blog = () => {
          
       ))}
         </div>
+
     </div>
   )
 }

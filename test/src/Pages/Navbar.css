@@ -1,85 +1,89 @@
 
-/* body {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-} */
+
+
+
+
 
 .Navbar {
-    /* border: 1px solid; */
-    /* margin-top: 30px; */
+
     display: flex;
     gap: 250px;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     height: 60px;
-
+    z-index: 20;
     position: sticky;
-
+    background-color: black;
     top: 0px;
-    background-image: url("https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg")
+    /* background-image: url("https://www.shutterstock.com/image-photo/handsome-caucasian-muscle-man-model-260nw-1043641723.jpg") */
 }
 
 .Navbar .logo {
-    /* border: 1px solid; */
+
     margin-left: 200px;
 
 }
 
 .logo img {
-  width: 80px;
-  height: 60px;
-  border-radius: 50px;
+
+  width: 40px;
+  height: 45px;
+  border-radius: 5%;
+
 }
 
 .logo span {
-  color: red;
-  font-weight: bolder;
-  font-size: large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
+    color: red;
+    font-weight: bolder;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
-.navi > nav {
-  display: flex;
-  gap: 60px;
-  margin-right: 1%;
-  position: absolute;
+.navi>nav {
+    display: flex;
+    gap: 60px;
+    margin-right: 1%;
+    position: absolute;
 }
 
 .navi a {
-  color: red;
-  font-variant: small-caps;
-  font-weight: bold;
-  font-size: large;
-  display: flex;
-  justify-content: center;
-  height: 30px;
+    color: red;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    height: 30px;
 }
 
 a:focus {
-  background-color: rgb(255, 255, 255);
+
+  /* background-color: rgb(255, 255, 255); */
   border-color: rgb(76, 154, 255);
 }
 
-a:hover {
+/* a:hover {
   background-color: rgb(235, 236, 240);
   cursor: pointer;
-}
+} */
+
 
 a {
     text-decoration: none;
 }
 
 
+
 .button a{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     
+
     display: inline-block;
     outline: 0;
     border: 0;
     cursor: pointer;
-    will-change: box-shadow,transform;
+    will-change: box-shadow, transform;
     box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
     padding: 0 32px;
     border-radius: 6px;
@@ -87,20 +91,22 @@ a {
     height: 48px;
     font-size: 18px;
     text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
-    transition: box-shadow 0.15s ease,transform 0.15s ease;
-    
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
 }
 
 a:hover {
     box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
     transform: translateY(-2px);
 }
-a:active{
+
+a:active {
     box-shadow: inset 0px 3px 7px #3c4fe0;
     transform: translateY(2px);
 
 }
-.btnWrapper{
+
+.btnWrapper {
     margin-left: 25rem;
     margin-top: 25px;
 }

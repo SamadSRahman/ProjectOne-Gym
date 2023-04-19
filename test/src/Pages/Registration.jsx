@@ -155,6 +155,8 @@ export function Registration() {
           </div>
         )}
       </div>
+
+      
     </div>
   );
 }
