@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 function Home() {
 
   return (
@@ -75,6 +76,7 @@ function Home() {
       </main>
         </div>
       </div>
+
       <div className='footer'>
         <div className="about">
           <h1>GYM</h1>
@@ -104,9 +106,9 @@ function Home() {
       <div className="par">
         <p>@2023 all rights reserved</p>
         </div>
+
     </div>
     
-
 
   )
 
