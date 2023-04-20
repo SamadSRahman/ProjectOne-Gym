@@ -112,9 +112,9 @@ export function AboutUs() {
       </div>
       <div className={Style.background2}></div>
 
-      {/* <div className={Style.vidPlayer}>
+      <div className={Style.vidPlayer}>
         <YouTube videoId="https://www.youtube.com/results?search_query=gym+traning+video" />
-      </div> */}
+      </div>
     </>
   );
 }
