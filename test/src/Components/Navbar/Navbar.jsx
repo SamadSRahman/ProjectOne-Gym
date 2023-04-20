@@ -49,7 +49,15 @@ export function Navbar1() {
             <Link to="/aboutus"><label onClick={() => setIsvisible(!isVisible)} >About Us</label></Link>
             <Link to="/classes"><label onClick={() => setIsvisible(!isVisible)}>Classes</label></Link>
             <Link to="/reviews"><label onClick={() => setIsvisible(!isVisible)}>Reviews</label></Link>
-            <Link to="/register"><label onClick={() => setIsvisible(!isVisible)}>LogIn</label></Link>
+            <Link to="/register"><label onClick={() => {
+                 if (isLoggedIn == true) {
+                    alert("Are you sure you want to Logout?")
+                }
+                setIsvisible(!isVisible)
+                setIsLogin(true)
+                setIsLoggedIn(false)
+            }
+            }>{isLoggedIn ? "Logout" : "Login"}</label></Link>
 
             </div>
       
