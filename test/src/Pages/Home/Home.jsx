@@ -34,7 +34,12 @@ const [isLogin,setIsLogin] = useRecoilState(isShow)
           <img src="https://images.pexels.com/photos/6456294/pexels-photo-6456294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-image-alt" />
           <img src="https://images.pexels.com/photos/6455824/pexels-photo-6455824.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-image-alt" />
         </div>
-
+        <div className="trainer">
+          <p>Anllela Sagra</p>
+          <p> Brad Schoenfeld</p>
+          <p> Matt Roberts</p>
+          <p>Shaun Stafford</p>
+         </div>
       </div>
       <div className="price-section">
         <div className="div1">
