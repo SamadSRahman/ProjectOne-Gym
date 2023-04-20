@@ -45,17 +45,21 @@
   }
   .headingWrapper {
   
-    background-color: black;
+    background-color:black
+    
   }
   .headingWrapper img {
-      height:  20rem;
+    height:  20rem;
+      
     
   }
   
-  .headingWrapper h1 {
+  .headingWrapper span {
     margin-top: 0px;
-    color:maroon;
-  font-size: 5rem;
+    color:red;
+  font-size: 500%;
+  display: inline-block;
+ 
   
   }
   @media screen and (max-width: 600px) {
@@ -74,6 +78,10 @@
       width: 70%;
       overflow: scroll;
     }
+    .headingWrapper span{
+      font-size: 300%;
+    }
+
   }
   .wrapper:hover {
     transform: scale(1.02);

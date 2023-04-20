@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/" target="blank" style={{ color: 'white' }}>{<BsInstagram />}</a>
           <a href="https://www.youtube.com/" target="blank" style={{color:'white'}}>{<BsYoutube/>}</a>
         </div>
-        <div className="">
+        <div className="footer-links">
          <span>POLICIES & LEGAL</span>
          <p>Privacy policy</p>
          <p>Terms & Conditions - Website.</p>
