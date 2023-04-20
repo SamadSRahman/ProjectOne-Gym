@@ -306,7 +306,12 @@ hr {
   background-color: white;
   color: #ee0404;
 }
-
+.footer p{
+  cursor: pointer;
+}
+.footer p:hover{
+  text-decoration: underline;
+}
 @media screen and (max-width:650px) {
   .price-section{
     display: block;

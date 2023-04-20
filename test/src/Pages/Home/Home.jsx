@@ -1,9 +1,10 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-
+import { isShow } from "../../data/atom";
+import { useRecoilState } from "recoil";
 function Home() {
-
+const [isLogin,setIsLogin] = useRecoilState(isShow)
   return (
 
     <div className="container">
@@ -16,7 +17,7 @@ function Home() {
 
         </div>
         <div class="button-container">
-          <Link to='/register'><a className="button">Join us</a></Link>
+          <Link to='/register'><a onClick={()=>setIsLogin(false)} className="button">Join us</a></Link>
         </div>
       </header>
       <div className="main-section">
