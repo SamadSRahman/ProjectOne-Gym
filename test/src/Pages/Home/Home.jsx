@@ -28,18 +28,24 @@ const [isLogin,setIsLogin] = useRecoilState(isShow)
           industry get to know us
         </main>
         <div className="section-image">
+          <div className="image1">
           <img src="https://images.pexels.com/photos/6922165/pexels-photo-6922165.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-image-alt" />
-
-          <img src="https://images.pexels.com/photos/7991604/pexels-photo-7991604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-images-alt" />
-          <img src="https://images.pexels.com/photos/6456294/pexels-photo-6456294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-image-alt" />
-          <img src="https://images.pexels.com/photos/6455824/pexels-photo-6455824.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-image-alt" />
-        </div>
-        <div className="trainer">
           <p>Anllela Sagra</p>
+          </div>
+          <div className="image2">
+          <img src="https://images.pexels.com/photos/7991604/pexels-photo-7991604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-images-alt" />
           <p> Brad Schoenfeld</p>
+          </div>
+          <div className="image3">
+          <img src="https://images.pexels.com/photos/6456294/pexels-photo-6456294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-image-alt" />
           <p> Matt Roberts</p>
+          </div>
+          <div className="image4">
+          <img src="https://images.pexels.com/photos/6455824/pexels-photo-6455824.jpeg?auto=compress&cs=tinysrgb&w=600" alt="your-image-alt" />
           <p>Shaun Stafford</p>
-         </div>
+          </div>
+        </div>
+      
       </div>
       <div className="price-section">
         <div className="div1">
