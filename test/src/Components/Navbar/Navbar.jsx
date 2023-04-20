@@ -2,11 +2,20 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import {GiHamburgerMenu} from 'react-icons/gi'
+import { useRecoilState } from "recoil";
+import { isLogged } from "../../data/atom";
+import { isShow } from "../../data/atom";
 
 export function Navbar1() {
     const [isVisible, setIsvisible] = useState(false)
     const value="https://image.similarpng.com/very-thumbnail/2021/07/Fitness-Gym-logo-design-template-on-transparent-background-PNG.png"
-
+    const [isLoggedIn, setIsLoggedIn] = useRecoilState(isLogged)
+    const [isLogin, setIsLogin] = useRecoilState(isShow)
+    function handleLoginClick() {
+        setIsLogin(true)
+        setIsLoggedIn(false)
+        
+    }
     return <div className={styles.Wrapper}>
         <div className={styles.navbarContainer}>
         <div className={styles.logoContainer}>
@@ -23,7 +32,7 @@ export function Navbar1() {
             </div>
                 
             <div className={styles.btnWrapper}>
-            <Link to='/register'><a className="button">Join us</a></Link>
+                    <Link to='/register'><a onClick={handleLoginClick} className="button">{isLoggedIn?"Logout":"Login"}</a></Link>
             </div>
             </div>
             <div className={styles.menuBtnWrapper}>

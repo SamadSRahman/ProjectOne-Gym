@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { InputField } from "../../Components/InputField";
 import styles from "./Registration.module.css";
 import { useNavigate } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { isLogged } from "../../data/atom";
+import { isShow } from "../../data/atom";
 export function Registration() {
+  const [isLoggedIn, setIsLoggedIn] = useRecoilState(isLogged)
   const propsData = [
     "Email: ",
     "First Name: ",
@@ -11,7 +15,7 @@ export function Registration() {
     "Confirm Password: ",
   ];
   const type = ["email", "text", "text", "password"];
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useRecoilState(isShow)
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
@@ -85,6 +89,7 @@ export function Registration() {
     } else if (currentUser.password === password) {
       alert("Login Succesfull");
       navigate("/");
+      setIsLoggedIn(true)
     } else {
       alert("Incorrect Email or Password");
     }

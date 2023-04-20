@@ -37,7 +37,7 @@ const Reviews = () => {
   return (
     <Fragment>
       <div className={styles.headingWrapper}>
-      <h1>Reviews</h1>
+      <span>Reviews</span>
         <img src={blogBgImg[count]} alt="background img" />
        
       </div>
