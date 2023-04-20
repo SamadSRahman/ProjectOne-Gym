@@ -85,7 +85,7 @@
   top: 10%;
 }
 .menuBtnWrapper{
-    display: flex;
+    display: none;
     padding-top: 15px;
     max-height: 10%;
     position: relative;
@@ -95,6 +95,7 @@
     
 }
 .menuWrapper{
+  
     position: relative;
     left: 30%;
     background-color: maroon;
@@ -121,5 +122,7 @@
     .linkWrapper{
         display: none;
     }
-    
+    .menuBtnWrapper{
+      display: flex;
+    }
 }
