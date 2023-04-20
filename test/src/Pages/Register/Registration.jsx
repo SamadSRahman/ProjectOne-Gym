@@ -26,17 +26,24 @@ export function Registration() {
     lastName: "",
     password: "",
   });
-
+  const rawData = {...data}
   function handleSubmit(event) {
+    const users = getUsers();
     event.preventDefault();
     if (!data.email || !data.firstName || !data.lastName || !data.password) {
       alert("Please fill out all the details");
       return;
-    } else if (data.password.length <= 7) {
+    }
+    
+    else if (data.password.length <= 7) {
       alert("Password should contain atleat 8 characters");
-    } else if (data.password != confirmPass) {
+    } else if (data.password !== confirmPass) {
       alert("Password and Confirm Password do not match");
-    } else {
+    }
+    else if(users.find((ele)=>ele.email===data.email)){
+        alert("User with this Email already exist")
+      }
+    else {
       const users = getUsers();
       users.push(data);
       localStorage.setItem("users", JSON.stringify(users));
