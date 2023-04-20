@@ -22,8 +22,8 @@
 } */
 .heading {
   font-size: 2.5rem;
-  padding-top: 80px;
-  margin-bottom: 50px;
+  padding-top: 5rem;
+  margin-bottom: 3.125rem;
 }
 
 .heading::first-line {
@@ -40,36 +40,36 @@ strong {
 .discription {
   background-color: #ffffff8c;
   color: #444;
-  width: 800px;
-  margin-left: 50px;
+  width: 50rem;
+  margin-left: 3.125rem;
   border: 3px red solid;
-  margin-left: 400px;
+  margin-left: 25rem;
   border-radius: 5px;
-  margin-top: -1120px;
+  margin-top: -70.75rem;
 }
 
 .discriptionHeading {
   text-align: right;
-  margin-right: 120px;
+  margin-right: 7.5rem;
 }
 
 .para1 {
-  margin-left: 400px;
-  margin-right: 20px;
+  margin-left: 25rem;
+  margin-right: 1.25rem;
 }
 
 .sectionFlex {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  width: 250px;
+  gap: 3.125rem;
+  width: 15.625rem;
   text-align: right;
 }
 
 .section1 {
   background-color: #fffffff8;
   border-radius: 5px;
-  margin-left: 50px;
+  margin-left: 3.125rem;
 }
 
 .sideBarImg {
@@ -86,4 +86,10 @@ strong {
 
 h3 {
   text-align: center;
+}
+
+.vidPlayer {
+  margin-top: -31.25rem;
+  /* border: 1px solid red; */
+  margin-left: 18.75rem;
 }
