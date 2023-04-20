@@ -58,7 +58,8 @@
     margin-top: 0px;
     color:red;
   font-size: 500%;
-  display: flex;
+  display: inline-block;
+ 
   
   }
   @media screen and (max-width: 600px) {
@@ -77,6 +78,10 @@
       width: 70%;
       overflow: scroll;
     }
+    .headingWrapper span{
+      font-size: 300%;
+    }
+
   }
   .wrapper:hover {
     transform: scale(1.02);

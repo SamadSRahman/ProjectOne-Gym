@@ -11,7 +11,11 @@ export function Navbar1() {
     const value="https://image.similarpng.com/very-thumbnail/2021/07/Fitness-Gym-logo-design-template-on-transparent-background-PNG.png"
     const [isLoggedIn, setIsLoggedIn] = useRecoilState(isLogged)
     const [isLogin, setIsLogin] = useRecoilState(isShow)
+
     function handleLoginClick() {
+        if (isLoggedIn == true) {
+            alert("Are you sure you want to Logout?")
+        }
         setIsLogin(true)
         setIsLoggedIn(false)
         
