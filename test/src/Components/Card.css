@@ -1,10 +1,11 @@
 .Card{
     /* border: 1px solid; */
-    margin-left: 3.125rem;
+    margin-left: 10%;
     width: 33%;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    justify-content: center;
+    gap: 5%;
 }
 
 .Card:hover{
@@ -17,20 +18,21 @@
 }
 
 .Card > img{
-    width: 350px;
-    height: 350px;
-    margin-right: 1000px;
-    margin-top: 20px;
-    margin-left: 80px;
+    width: 70%;
+    height: 70%;
+    margin-right: 62.5rem;
+    margin-top: 1.25rem;
+    margin-left: 5rem;
 
     
 }
 
 .Card > h4{
-    margin-right: 62.5rem;
+    /* margin-right: 62.5rem; */
     /* border: 2px solid; */
-    width: 200px;
-    margin-left: 150px;
+    /* text-align: center; */
+    width: 12.5rem;
+    /* margin-left: 150px; */
     font-family: FitnessFirst-Medium;
     color: slategray;
 }

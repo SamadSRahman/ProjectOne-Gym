@@ -3,40 +3,40 @@ import { InputField } from "../Components/InputField";
 import styles from "./Registration.module.css";
 import { useNavigate } from "react-router-dom";
 export function Registration() {
-
-  const propsData = ["Email: ", "First Name: ", "Last Name: ", "Password: ", "Confirm Password: "];
+  const propsData = [
+    "Email: ",
+    "First Name: ",
+    "Last Name: ",
+    "Password: ",
+    "Confirm Password: ",
+  ];
   const type = ["email", "text", "text", "password"];
-    const [isLogin, setIsLogin] = useState(true);
-    const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [confirmPass, setConfirmPass] = useState("")
-    const navigate = useNavigate()
+  const [isLogin, setIsLogin] = useState(true);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPass, setConfirmPass] = useState("");
+  const navigate = useNavigate();
   const [data, setData] = useState({
     email: "",
     firstName: "",
     lastName: "",
     password: "",
   });
-    
+
   function handleSubmit(event) {
     event.preventDefault();
     if (!data.email || !data.firstName || !data.lastName || !data.password) {
-      alert("Please fill out all the details")
-      return;
+      alert("Please fill out all the details");
+    } else if (data.password.length <= 7) {
+      alert("Password should contain atleat 8 characters");
+    } else if (data.password != confirmPass) {
+      alert("Password and Confirm Password do not match");
+    } else {
+      const users = getUsers();
+      users.push(data);
+      localStorage.setItem("users", JSON.stringify(users));
+      setIsLogin(!isLogin);
     }
-    else if (data.password.length <= 7){
-      alert("Password should contain atleat 8 characters")
-    
-  }
-    else if (data.password != confirmPass) {
-      alert("Password and Confirm Password do not match")
-        }
-      else {
-          const users = getUsers();
-          users.push(data);
-          localStorage.setItem("users", JSON.stringify(users));
-          setIsLogin(!isLogin)
-      }
   }
   function handleEmailChange(event) {
     const input = { ...data };
@@ -59,7 +59,7 @@ export function Registration() {
     setData(input);
   }
   function handleConfirmPasswordChange(event) {
-    setConfirmPass(event.target.value)
+    setConfirmPass(event.target.value);
   }
   function getUsers() {
     const users = localStorage.getItem("users"); // getting data
@@ -73,24 +73,20 @@ export function Registration() {
     }
     return [];
   }
-    
-    function handleLogin(e) {
-        e.preventDefault()
-      const users = getUsers();
-      
-      let currentUser = users.find((ele) => ele.email == email)
-      if (!currentUser)
-      {
-        alert("No User Found")
-        }
-        else if (currentUser.password === password) {
-            alert("Login Succesfull")
-            navigate('/')
-        }
-        else {
-            alert("Incorrect Email or Password")
-        }
-      
+
+  function handleLogin(e) {
+    e.preventDefault();
+    const users = getUsers();
+
+    let currentUser = users.find((ele) => ele.email == email);
+    if (!currentUser) {
+      alert("No User Found");
+    } else if (currentUser.password === password) {
+      alert("Login Succesfull");
+      navigate("/");
+    } else {
+      alert("Incorrect Email or Password");
+    }
   }
 
   return (
@@ -98,21 +94,28 @@ export function Registration() {
       <div className={styles.wrapper}>
         {isLogin ? (
           <div className={styles.loginWrapper}>
-            <form onSubmit={(e)=>handleLogin(e)} className={styles.loginForm}>
+            <form onSubmit={(e) => handleLogin(e)} className={styles.loginForm}>
               <h1 className={styles.heading}>Login</h1>
 
-              <InputField func={(e)=>setEmail(e.target.value)} type={type[0]} label={propsData[0]} />
-              <InputField func={(e)=>setPassword(e.target.value)}type={type[3]} label={propsData[3]} />
-                          <InputField type="submit" class="submitBtn" />
-                          <span>Don't have an account? </span>
-            <span
-              className={styles.linkSpan}
-              onClick={() => setIsLogin(!isLogin)}
-            >
-              Register
-            </span>
+              <InputField
+                func={(e) => setEmail(e.target.value)}
+                type={type[0]}
+                label={propsData[0]}
+              />
+              <InputField
+                func={(e) => setPassword(e.target.value)}
+                type={type[3]}
+                label={propsData[3]}
+              />
+              <InputField type="submit" class="submitBtn" />
+              <span>Don't have an account? </span>
+              <span
+                className={styles.linkSpan}
+                onClick={() => setIsLogin(!isLogin)}
+              >
+                Register
+              </span>
             </form>
-            
           </div>
         ) : (
           <div className={styles.registerWrapper}>
@@ -155,8 +158,6 @@ export function Registration() {
           </div>
         )}
       </div>
-
-      
     </div>
   );
 }
