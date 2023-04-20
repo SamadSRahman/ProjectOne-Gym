@@ -1,6 +1,6 @@
 import React from "react";
 import "./Classes.css";
-import Card from "../Components/Card";
+import Card from "../../Components/Card";
 
 const Classes = () => {
   let array = [

@@ -66,6 +66,7 @@ img {
   margin-bottom: 20px;
   transition: all 0.3s ease;
   border-radius: .9rem;
+  
 }
 
 .button:hover {
@@ -108,6 +109,7 @@ img {
 
 .section-image:hover img {
   transform: scale(1.2);
+  
 }
 
 .section-image img {
@@ -303,4 +305,13 @@ hr {
   height: 100%;
   background-color: white;
   color: #ee0404;
+}
+
+@media screen and (max-width:650px) {
+  .price-section{
+    display: block;
+  }
+  .footer{
+    display: block;
+  }
 }

@@ -12,7 +12,7 @@
     border-radius: 3.125rem;
     width: 35%;
     height: 2rem;
-    background-color: gray;
+    background-color: #790606;
     color:white;
     font-weight: bold;
     font-size: large;
@@ -21,8 +21,10 @@
 }
 input{
     border-radius: 0.625rem;
-    height: 1.3rem;
+    height: 1.6rem;
+    
     font-family: inconsolata;
     width: 69%;
     position: relative;
+    font-size: larger;
 }

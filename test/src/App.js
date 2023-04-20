@@ -1,25 +1,27 @@
 import { Routes, Route } from "react-router-dom";
-import Blog from "./Pages/Blog";
 import "./App.css";
-import Home from "./Pages/Home";
-import Classes from "./Pages/Classes";
+import Home from "./Pages/Home/Home";
+import Classes from "./Pages/Classes/Classes";
 import { AboutUs } from "./Pages/AboutUs/AboutUs";
-import { Navbar } from "./Pages/Navbar";
-import { Registration } from "./Pages/Registration";
-import Footer from "./Pages/Footer";
-import Reviews from './Pages/review'
+import { Registration } from "./Pages/Register/Registration";
+import Footer from "./Pages/Home/Footer";
+import Reviews from './Pages/Review/review'
+import { Navbar1 } from "./Components/Navbar/Navbar";
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar1 />
       <Routes>
+       
         <Route path="/" element={<Home />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/register" element={<Registration />} />
+          <Route path="/register" element={<Registration />} />
+          
       </Routes>
-
+      
       <Footer/>
     </div>
   );

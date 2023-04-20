@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import styles from "./reviews.module.css";
-import { blogData, blogBgImg } from "../data/blogData";
-import Footer from "./Footer";
+import { blogData, blogBgImg } from "../../data/blogData";
+
 import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
-import { Button } from "../Components/Button";
+import { Button } from "../../Components/Button";
 import { useEffect } from "react";
 import { useState } from "react";
 
