@@ -9,12 +9,15 @@
     overflow: scroll;
     background-color: black;
   }
+  .wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
   .container {
     display: flex;
     margin: 10px;
     height: 37rem;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    overflow: hidden;
     background-color: darkgray;
   
   }  .text {
@@ -69,6 +72,9 @@
       overflow-x: hidden;
       margin-left: 3rem;
       margin-right: 3rem;
+    }
+    .container::-webkit-scrollbar {
+      display: none;
     }
     .imgWrapper {
       width: 40%;

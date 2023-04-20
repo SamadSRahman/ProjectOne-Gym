@@ -29,6 +29,9 @@
   justify-content: center;
   align-items: center;
 }
+.linksContainer::-webkit-scrollbar {
+  display: none;
+}
 .linksContainer a {
   width: 6rem;
   color: red;
