@@ -105,7 +105,7 @@ img {
   justify-content: center;
   gap: 20px;
   margin-bottom: 30px;
-  background-color: #555;
+  background-color: #110f0f;
 }
 
 .section-image img:hover {
@@ -137,7 +137,9 @@ img {
   .trainer p:hover{
     color: #26e015;
   }
-
+  
+ 
+  
 .price-section {
   display: flex;
   justify-content: center;
