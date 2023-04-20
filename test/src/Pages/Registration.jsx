@@ -6,37 +6,37 @@ export function Registration() {
 
   const propsData = ["Email: ", "First Name: ", "Last Name: ", "Password: ", "Confirm Password: "];
   const type = ["email", "text", "text", "password"];
-    const [isLogin, setIsLogin] = useState(true);
-    const [email, setEmail] = useState('')
+  const [isLogin, setIsLogin] = useState(true);
+  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPass, setConfirmPass] = useState("")
-    const navigate = useNavigate()
+  const navigate = useNavigate()
   const [data, setData] = useState({
     email: "",
     firstName: "",
     lastName: "",
     password: "",
   });
-    
+
   function handleSubmit(event) {
     event.preventDefault();
     if (!data.email || !data.firstName || !data.lastName || !data.password) {
       alert("Please fill out all the details")
       return;
     }
-    else if (data.password.length <= 7){
+    else if (data.password.length <= 7) {
       alert("Password should contain atleat 8 characters")
-    
-  }
+
+    }
     else if (data.password != confirmPass) {
       alert("Password and Confirm Password do not match")
-        }
-      else {
-          const users = getUsers();
-          users.push(data);
-          localStorage.setItem("users", JSON.stringify(users));
-          setIsLogin(!isLogin)
-      }
+    }
+    else {
+      const users = getUsers();
+      users.push(data);
+      localStorage.setItem("users", JSON.stringify(users));
+      setIsLogin(!isLogin)
+    }
   }
   function handleEmailChange(event) {
     const input = { ...data };
@@ -73,24 +73,23 @@ export function Registration() {
     }
     return [];
   }
-    
-    function handleLogin(e) {
-        e.preventDefault()
-      const users = getUsers();
-      
-      let currentUser = users.find((ele) => ele.email == email)
-      if (!currentUser)
-      {
-        alert("No User Found")
-        }
-        else if (currentUser.password === password) {
-            alert("Login Succesfull")
-            navigate('/')
-        }
-        else {
-            alert("Incorrect Email or Password")
-        }
-      
+
+  function handleLogin(e) {
+    e.preventDefault()
+    const users = getUsers();
+
+    let currentUser = users.find((ele) => ele.email == email)
+    if (!currentUser) {
+      alert("No User Found")
+    }
+    else if (currentUser.password === password) {
+      alert("Login Succesfull")
+      navigate('/')
+    }
+    else {
+      alert("Incorrect Email or Password")
+    }
+
   }
 
   return (
@@ -98,21 +97,21 @@ export function Registration() {
       <div className={styles.wrapper}>
         {isLogin ? (
           <div className={styles.loginWrapper}>
-            <form onSubmit={(e)=>handleLogin(e)} className={styles.loginForm}>
+            <form onSubmit={(e) => handleLogin(e)} className={styles.loginForm}>
               <h1 className={styles.heading}>Login</h1>
 
-              <InputField func={(e)=>setEmail(e.target.value)} type={type[0]} label={propsData[0]} />
-              <InputField func={(e)=>setPassword(e.target.value)}type={type[3]} label={propsData[3]} />
-                          <InputField type="submit" class="submitBtn" />
-                          <span>Don't have an account? </span>
-            <span
-              className={styles.linkSpan}
-              onClick={() => setIsLogin(!isLogin)}
-            >
-              Register
-            </span>
+              <InputField func={(e) => setEmail(e.target.value)} type={type[0]} label={propsData[0]} />
+              <InputField func={(e) => setPassword(e.target.value)} type={type[3]} label={propsData[3]} />
+              <InputField type="submit" class="submitBtn" />
+              <span>Don't have an account? </span>
+              <span
+                className={styles.linkSpan}
+                onClick={() => setIsLogin(!isLogin)}
+              >
+                Register
+              </span>
             </form>
-            
+
           </div>
         ) : (
           <div className={styles.registerWrapper}>
@@ -160,34 +159,34 @@ export function Registration() {
         <div className="about">
           <h1>GYM</h1>
           <p>Lorem ipsum dolor sit amet.</p>
-          <i class="fa fa-facebook" style={{fontSize:"46px",color:'red'}} ></i>
+          <i class="fa fa-facebook" style={{ fontSize: "46px", color: 'red' }} ></i>
           <i class="fa fa-instagram"></i>
           <i class="fa fa-twitter"></i>
         </div>
         <div className="">
-         <span>Healithy Living</span>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
+          <span>Healithy Living</span>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
         </div>
         <div className="service">
-         <span>Services</span>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
+          <span>Services</span>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
         </div>
         <div className="program">
-         <span>Programms</span>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
-         <p>Lorem, ipsum.</p>
+          <span>Programms</span>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
         </div>
-        <hr/>
-     </div>
-      
+        <hr />
+      </div>
+
       <div className="par">
         <p>@2023 all rights reserved</p>
-        </div>
+      </div>
     </div>
   );
 }

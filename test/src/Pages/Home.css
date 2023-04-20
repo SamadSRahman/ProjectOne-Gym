@@ -76,37 +76,30 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   background-color: #100f0f;
   color: #fff;
-  font-size: smaller;
-  font-size: 36px;
-  font-weight: 700;
+  font-size:larger;
+ font-weight: 700;
+ margin-bottom: 3rem;
   text-shadow: 1px 1px #fff;
 }
 
-.main-section {
-  font-size: 24px;
-  font-weight: bold;
-}
 
-.main-section main {
-  font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
+
 
 .section-image {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-bottom: 30px;
   background-color: #555;
+  margin-top: 3rem;
 }
 
-.section-image:hover img {
+.section-image img:hover {
   transform: scale(1.2);
 }
 
@@ -116,7 +109,25 @@ img {
   object-fit: cover;
 
 }
-
+.trainer{
+  display:flex;
+  
+  gap:15rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+  font-family: sans-serif;
+  font-weight: 100;
+  color:#ffff;
+  margin-top:4px;
+  }
+  .trainer>p{
+   text-align: center;
+   ;
+  }
+  .trainer p:hover{
+    color: #26e015;
+  
+  }
 .price-section {
   display: flex;
   justify-content: center;
@@ -179,7 +190,7 @@ img {
 .price-section para {
   font-size: 10px;
   font-weight: 5px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: sans-serif;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -187,11 +198,9 @@ img {
 .div1:hover {
   transform: scale(.9);
 }
-
 .div2:hover {
   transform: scale(.9);
 }
-
 .div3:hover {
   transform: scale(.9);
 }
@@ -219,6 +228,7 @@ img {
   gap: 3px;
   letter-spacing: 1px;
   font-size: smaller;
+  position:relative;
 
 }
 
@@ -279,7 +289,7 @@ img {
 
 .about a:hover {
   color: #3b5998;
-  /* Change to the social media platform's brand color */
+ 
 }
 
 
@@ -303,4 +313,19 @@ hr {
   height: 100%;
   background-color: white;
   color: #ee0404;
+}
+.footer-section>p:hover{
+ 
+  color:#23d513;
+  
+}
+.service>p:hover{
+  
+  color:#26e115;
+ 
+}
+.program>p:hover{
+ 
+  color:#24d914;
+ 
 }
