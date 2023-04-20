@@ -108,7 +108,7 @@ img {
   background-color: #555;
 }
 
-.section-image img:hover {
+.section-image div:hover {
   transform: scale(1.2);
   
 }
@@ -134,7 +134,7 @@ img {
    text-align: center;
    
   }
-  .trainer p:hover{
+  .trainer  p:hover{
     color: #26e015;
   }
 
