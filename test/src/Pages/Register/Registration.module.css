@@ -1,0 +1,87 @@
+.loginWrapper {
+  border: 1px solid;
+  width: 100%;
+  min-width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: barbra;
+  background-image: url("https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  position: relative;
+  
+  background-position: center;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+.registerWrapper {
+  border: 1px solid;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: barbra;
+  background-image: url("https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  position: relative;
+  background-position: center;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+.heading {
+  font-size: 50px;
+}
+.wrapper {
+  background-color: gray;
+  height: 100vh;
+}
+span {
+  font-weight: bold;
+  font-size: large;
+}
+.linkSpan {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: darkgray;
+}
+.linkSpan:hover {
+  color: cadetblue;
+}
+.loginForm {
+  border: 1px solid;
+
+  width: 30%;
+  height: 28rem;
+
+  position: relative;
+  left: 32%;
+  top: 10%;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+.regForm {
+  border: 1px solid;
+  min-width: 10%;
+  width: 30%;
+  height: 70%;
+  /* overflow: scroll; */
+  position: relative;
+  left: 32%;
+  top: 10%;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+@media screen and (max-width:650px) {
+    .loginForm{
+        min-width: 60%;
+        left: 22%;
+    }
+    .regForm{
+        min-width: 80%;
+        left: 10%;
+        height: 80%;
+    }
+    
+    
+}
