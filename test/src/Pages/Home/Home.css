@@ -130,7 +130,7 @@ img {
 .price-section>div {
   margin-top: 10px;
   width: 300px;
-
+  overflow: scroll;
   background-color: #0f0e0e;
   color: white;
   padding: 30px;
@@ -232,6 +232,7 @@ img {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.5;
+  
 }
 
 .div3 .para span {

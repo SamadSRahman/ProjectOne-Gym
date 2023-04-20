@@ -68,7 +68,7 @@ const [isLogin,setIsLogin] = useRecoilState(isShow)
         <div className="div3">
           <span className="member">Membership</span>
           <main className='para'>
-            <span>from punch pass to monthly or Annual</span>
+            <span>From punch pass to monthly or Annual</span>
            
              At Gym Base,we offer a wide range of Membership with option to     
             suit every budget everything from one day pass.punch pass to monthly 

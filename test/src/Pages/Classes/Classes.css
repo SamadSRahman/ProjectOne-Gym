@@ -17,16 +17,19 @@
 } 
 
 .Classes-FirstText {
+    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
+    left: 20%;
+    right: 20%;
     text-align: center;
     color: white ;
     top: 9.375rem;
     z-index: 1;
-    margin-left: 24%;
+    /* margin-left: 24%; */
 }
 
 .Classes-FirstText> h1{
@@ -35,12 +38,14 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
     font-size: 5 rem;
+    text-align: center;
 }
 
 .Classes-FirstText> span{
     color: rgb(255, 255, 255);
     font-weight: bolder;
     font-size: xx-large;
+    text-align: center;
 }
 
 .Classes-SecondText{
@@ -50,6 +55,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.313rem;
+    /* text-align: center; */
     /* border: 2px solid blue; */
 }
 
@@ -72,7 +78,7 @@
 }
 
 .Classes-Scroller{
-    /* border: 2px solid gray; */
+    border: 2px solid rgb(243, 0, 0);
     /* position: relative; */
     margin-top: 25rem;
     display: flex;
@@ -85,12 +91,13 @@
     overflow: scroll;
     overflow-x: hidden;
     background-color:#30363d;
+    height:31.25rem;
 }
 
 .Classes-Scroller > .leftslide{
     position: sticky;
     left: 0;
-    z-index: 20;
+    z-index: 15;
     font-size: xx-large;
 }
 
@@ -98,7 +105,7 @@
     position: sticky;
     right: 0;
     font-size: xx-large;
-    z-index: 20;
+    z-index: 15;
     text-align: center;
 }
 
