@@ -26,7 +26,8 @@ export function Registration() {
     lastName: "",
     password: "",
   });
-  const rawData = {...data}
+  const rawData = { ...data }
+  
   function handleSubmit(event) {
     const users = getUsers();
     event.preventDefault();
@@ -48,6 +49,7 @@ export function Registration() {
       users.push(data);
       localStorage.setItem("users", JSON.stringify(users));
       setIsLogin(!isLogin);
+      alert("Registration Succesfull")
     }
   }
   function handleEmailChange(event) {
@@ -78,7 +80,7 @@ export function Registration() {
     try {
       if (users) {
         // users is there
-        return JSON.parse(users); // parsing
+        return JSON.parse(users); // parsing 
       }
     } catch (error) {
       return [];

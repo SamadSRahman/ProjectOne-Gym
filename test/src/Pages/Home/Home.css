@@ -332,8 +332,16 @@ hr {
 .footer p{
   cursor: pointer;
 }
+.footer h1{
+  cursor: pointer;
+}
 .footer p:hover{
   text-decoration: underline;
+  color: red
+}
+.footer h1:hover{
+  text-decoration: underline;
+  color: red
 }
 @media screen and (max-width:650px) {
   .price-section{

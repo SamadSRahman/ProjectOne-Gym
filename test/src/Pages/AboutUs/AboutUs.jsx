@@ -115,6 +115,7 @@ export function AboutUs() {
       <div className={Style.vidPlayer}>
         <YouTube videoId="https://www.youtube.com/results?search_query=gym+traning+video" />
       </div>
+  
     </>
   );
 }

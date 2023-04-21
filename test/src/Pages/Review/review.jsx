@@ -9,11 +9,11 @@ import { useState } from "react";
 
 
 function handleRightClick() {
-  document.getElementById("container").scrollLeft += 500;
+  document.getElementById("container").scrollLeft += 400;
  
 }
 function handleLeftClick() {
-  document.getElementById("container").scrollLeft -= 500;
+  document.getElementById("container").scrollLeft -= 400;
   
 }
 
@@ -37,9 +37,11 @@ const Reviews = () => {
   return (
     <Fragment>
       <div className={styles.headingWrapper}>
-      <span>Reviews</span>
+        <div className={styles.headingText}><span>Reviews</span>
+          <label>See what our members have to say about us.</label
+          ></div>
         <img src={blogBgImg[count]} alt="background img" />
-       
+      
       </div>
       <div className={styles.background}>
         <Button
