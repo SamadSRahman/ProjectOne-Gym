@@ -3,11 +3,14 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import { isShow } from "../../data/atom";
 import { useRecoilState } from "recoil";
+import ScrollToTop from "../../Components/ScrollRestore/ScrollRestore";
+
 function Home() {
 const [isLogin,setIsLogin] = useRecoilState(isShow)
   return (
 
     <div className="container">
+      <ScrollToTop/>
       <header class="image-section">
         <div className='main'>
           <main>Take care of your body it's the only place you have to live</main>
