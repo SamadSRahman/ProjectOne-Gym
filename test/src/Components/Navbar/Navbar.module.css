@@ -29,6 +29,9 @@
   justify-content: center;
   align-items: center;
 }
+.linksContainer::-webkit-scrollbar {
+  display: none;
+}
 .linksContainer a {
   width: 6rem;
   color: red;
@@ -103,6 +106,12 @@
     z-index: 20;
     position: absolute;
     opacity: 0.9;
+}
+@media screen and (min-width:650px) {
+  .menuWrapper{
+    display: none;
+  }
+  
 }
 .menuWrapper a{
     text-decoration: none;

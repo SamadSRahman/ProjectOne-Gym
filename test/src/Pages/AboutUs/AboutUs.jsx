@@ -119,9 +119,10 @@ export function AboutUs() {
       </div>
       <div className={Style.background2}></div>
 
-      <div className={Style.vidPlayer}>
-        <ReactPlayer url="https://www.youtube.com/watch?v=HyQNCT2Jnq0" />
+
+        <ReactPlayer url="https://www.youtube.com/watch?v=HyQNCT2Jnq0" controls />
       </div>
     </div>
+
   );
 }
