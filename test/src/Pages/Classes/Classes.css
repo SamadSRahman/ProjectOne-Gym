@@ -92,6 +92,8 @@
     overflow-x: hidden;
     background-color:#30363d;
     height:31.25rem;
+
+    scroll-behavior: smooth;
 }
 
 .Classes-Scroller > .leftslide{
