@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { isLogged } from "../../data/atom";
 import { isShow } from "../../data/atom";
+import ScrollToTop from "../../Components/ScrollRestore/ScrollRestore";
+
 export function Registration() {
   const [isLoggedIn, setIsLoggedIn] = useRecoilState(isLogged)
   const propsData = [
@@ -106,6 +108,7 @@ export function Registration() {
 
   return (
     <div>
+      <ScrollToTop/>
       <div className={styles.wrapper}>
         {isLogin ? (
           <div className={styles.loginWrapper}>

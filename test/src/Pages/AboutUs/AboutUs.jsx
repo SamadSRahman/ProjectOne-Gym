@@ -1,10 +1,12 @@
 import React from "react";
 import Style from "./AboutUs.module.css";
 import ReactPlayer from "react-player/youtube";
+import ScrollToTop from "../../Components/ScrollRestore/ScrollRestore";
 
 export function AboutUs() {
   return (
     <div className="container">
+      <ScrollToTop/>
       <div className={Style.background}>
         <div className={Style.heading}>
           ABOUT <strong>POWER FITNESS GYM</strong>

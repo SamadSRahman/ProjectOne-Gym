@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./reviews.module.css";
 import { blogData, blogBgImg } from "../../data/blogData";
-
+import ScrollToTop from "../../Components/ScrollRestore/ScrollRestore";
 import { BsChevronDoubleRight, BsChevronDoubleLeft } from "react-icons/bs";
 import { Button } from "../../Components/Button";
 import { useEffect } from "react";
@@ -28,6 +28,7 @@ function Reviews() {
 
   return (
     <Fragment>
+      <ScrollToTop />
       <div className={styles.headingWrapper}>
         <div className={styles.headingText}>
           <span>Reviews</span>
