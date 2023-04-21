@@ -127,6 +127,9 @@
     color: white;
     
 }
+.menuWrapper label:hover{
+  background-color: black;
+}
 @media screen and (max-width:650px) {
     .linkWrapper{
         display: none;

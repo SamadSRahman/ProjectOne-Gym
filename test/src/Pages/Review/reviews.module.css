@@ -40,50 +40,65 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-
 }
 .background {
   display: flex;
   height: 95vh;
   padding-top: 3%;
   background-color: black;
+  position: relative;
+  top: 85%;
 }
 .headingWrapper {
   border: 1px solid white;
-  background-color: black;
+  background-color: white;
 }
 .headingWrapper img {
   height: 40rem;
   opacity: 0.5;
   position: relative;
+  top: 0%;
+  left: 0%;
   margin-top: 0px;
+  z-index: 0;
 }
-
-.headingText span {
-  
-  color: red;
-  font-size: 500%;
-  text-decoration: underline;
+.headingText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 37%;
-  top: 15%;
-  z-index: 2;
-  display: inline-block ;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  color: white;
+  top: 20%;
+  z-index: 1;
+}
+.headingText span {
+  color: rgb(131, 9, 9);
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: underline;
+  font-size: 500%;
+  text-align: center;
 }
 .headingText label {
-  z-index: 10;
+  text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+				
   color: white;
-  position: absolute;
-  left: 26%;
-  top: 16rem;
-  font-size: xx-large;
   font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .container {
-    display: block;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
     margin-left: 3rem;
     margin-right: 3rem;
   }
@@ -91,12 +106,12 @@
     display: none;
   }
   .imgWrapper {
-    width: 40%;
-    height: 10%;
+    width: 45%;
+    height: 20%;
   }
   .wrapper {
-    width: 70%;
-    overflow: scroll;
+    min-width: 80%;
+    overflow: hidden;
   }
   .headingWrapper span {
     font-size: 350%;
