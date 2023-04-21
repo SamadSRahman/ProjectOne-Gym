@@ -1,10 +1,10 @@
 import React from "react";
 import Style from "./AboutUs.module.css";
-import YouTube from "react-youtube";
+import ReactPlayer from "react-player/youtube";
 
 export function AboutUs() {
   return (
-    <>
+    <div className="container">
       <div className={Style.background}>
         <div className={Style.heading}>
           ABOUT <strong>POWER FITNESS GYM</strong>
@@ -16,6 +16,7 @@ export function AboutUs() {
                 <img
                   className={Style.sideBarImg}
                   src="https://goldsgym.in/uploads/home_icons/gyms.jpg"
+                  alt="gym-icon"
                 />
                 <h3>150 Gyms</h3>
               </div>
@@ -24,6 +25,7 @@ export function AboutUs() {
                 <img
                   className={Style.sideBarImg}
                   src="https://goldsgym.in/uploads/home_icons/cities.jpg"
+                  alt="gym-icon"
                 />
                 <h3>95 Cities</h3>
               </div>
@@ -32,6 +34,7 @@ export function AboutUs() {
                 <img
                   className={Style.sideBarImg}
                   src="https://goldsgym.in/uploads/home_icons/states.jpg"
+                  alt="gym-icon"
                 />
                 <h3>25 States</h3>
               </div>
@@ -40,7 +43,8 @@ export function AboutUs() {
                 <img
                   className={Style.sideBarImg}
                   src="https://goldsgym.in/uploads/home_icons/Website_Personal.jpg"
-                />{" "}
+                  alt="gym-icon"
+                />
                 <h3>Personal Traning</h3>
                 <h3>Program</h3>
               </div>
@@ -49,6 +53,7 @@ export function AboutUs() {
                 <img
                   className={Style.sideBarImg}
                   src="https://goldsgym.in/uploads/home_icons/Corporate.jpg"
+                  alt="gym-icon"
                 />
                 <h3>Corporate Wellness </h3>
                 <h3> Program</h3>
@@ -58,6 +63,7 @@ export function AboutUs() {
                 <img
                   className={Style.sideBarImg}
                   src="https://goldsgym.in/uploads/home_icons/Group_Exercise.jpg"
+                  alt="gym-icon"
                 />
                 <h3>Group Program</h3>
               </div>
@@ -71,6 +77,7 @@ export function AboutUs() {
                   <img
                     className={Style.imagelady}
                     src="https://goldsgym.in/assets/images/work.jpg"
+                    alt="gym-lady"
                   />
                 </div>
                 <h3 className={Style.discriptionHeading}>What Do We Do</h3>
@@ -112,9 +119,9 @@ export function AboutUs() {
       </div>
       <div className={Style.background2}></div>
 
-      {/* <div className={Style.vidPlayer}>
-        <YouTube videoId="https://www.youtube.com/results?search_query=gym+traning+video" />
-      </div> */}
-    </>
+      <div className={Style.vidPlayer}>
+        <ReactPlayer url="https://www.youtube.com/watch?v=HyQNCT2Jnq0" />
+      </div>
+    </div>
   );
 }
