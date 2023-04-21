@@ -4,13 +4,20 @@
   color: white;
   border: none;
   cursor: pointer;
+  height: 80%;
+  font-size: xx-large;
+
 }
 .scrollBtn:hover{
-    border: 1px solid white;
+    
 }
-@media screen and (max-width:600px) {
+.scrollBtn:active{
+    transform: translateY(4px);
+}
+@media screen and (max-width:650px) {
     .scrollBtn{
         display: none;
+        
     }
     
 }

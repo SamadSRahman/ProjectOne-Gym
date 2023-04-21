@@ -122,7 +122,7 @@ export function AboutUs() {
 
         <ReactPlayer url="https://www.youtube.com/watch?v=HyQNCT2Jnq0" controls />
       </div>
-    </div>
+    
 
   );
 }
