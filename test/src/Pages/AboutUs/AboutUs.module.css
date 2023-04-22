@@ -46,7 +46,7 @@ strong {
   margin-left: 25rem;
   border-radius: 5px;
   margin-top: -70.75rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .discriptionHeading {
@@ -90,18 +90,18 @@ h3 {
 }
 
 .vidPlayer {
-  position: absolute;
+  /* position: absolute; */
   margin-left: 31.25rem;
   margin-top: -31.25rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   .vidPlayer {
     display: none;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   .discription {
     display: none;
   }
