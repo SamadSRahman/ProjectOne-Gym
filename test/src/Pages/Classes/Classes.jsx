@@ -38,11 +38,11 @@ const Classes = () => {
   ];
 
   function handleRight() {
-    document.getElementById("butt").scrollLeft += 640;
+    document.getElementById("butt").scrollLeft += 200;
   }
 
   function handleLeft() {
-    document.getElementById("butt").scrollLeft -= 640;
+    document.getElementById("butt").scrollLeft -= 200;
   }
 
   return (
