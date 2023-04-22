@@ -106,7 +106,7 @@ export function AboutUs() {
                 </p>
 
                 <p className={Style.para1}>
-                  Gold's Gym Has Become The Preferred Gym Of Celebrities,
+                  Power Fitness's Gym Has Become The Preferred Gym Of Celebrities,
                   Athletes, Bodybuilders, The Military, And Fitness Enthusiasts
                   All Over The World. Most Importantly, Gold's Gym Continues To
                   Change Lives By Helping People Achieve Their Individual
