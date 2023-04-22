@@ -1,6 +1,6 @@
 
  
-
+import ScrollToTop from "../../Components/ScrollRestore/ScrollRestore";
 import React from "react";
 import "./Classes.css";
 import Card from '../../Components/Card'
@@ -38,15 +38,16 @@ const Classes = () => {
   ];
 
   function handleRight() {
-    document.getElementById("butt").scrollLeft += 640;
+    document.getElementById("butt").scrollLeft += 200;
   }
 
   function handleLeft() {
-    document.getElementById("butt").scrollLeft -= 640;
+    document.getElementById("butt").scrollLeft -= 200;
   }
 
   return (
     <div className="Classes-Main">
+      <ScrollToTop/>
       <div className="Classes-Image">
         <img
           src="https://i.ytimg.com/vi/eBSmNDTm5bg/maxresdefault.jpg"
