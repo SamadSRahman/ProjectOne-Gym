@@ -68,7 +68,7 @@ const Classes = () => {
 
       <div className="Classes-Scroller" id="butt">
         <button className="leftslide" onClick={handleLeft}>
-          👈🏻
+          ⬅
         </button>
 
         {array.map((i) => {
@@ -76,7 +76,7 @@ const Classes = () => {
         })}
 
         <button className="rightslide" onClick={handleRight}>
-          👉
+          ➡
         </button>
       </div>
 
